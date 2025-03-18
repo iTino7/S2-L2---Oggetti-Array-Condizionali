@@ -44,6 +44,16 @@ if (div5 % 5 == 0) {
   Crea un algoritmo che determini l'ammontare totale che deve essere addebitato all'utente per il checkout.
 */
 
+let totalShoppingCard;
+
+let totalBag = 51;
+
+if (totalBag < 50) {
+  console.log("Spedizione gratuita");
+} else if (totalBag > 50) {
+  console.log(`${totalBag + 10}€, è stato aggiunto 10€ di spedizione`);
+}
+
 /* SCRIVI QUI LA TUA RISPOSTA */
 
 /* ESERCIZIO 6
@@ -93,15 +103,15 @@ if (result > 0) {
 
 /* ESERCIZIO 10
   Modifica la logica del seguente algoritmo in modo che mostri in console il messaggio corretto in ogni circostanza.
-  let val = 7
-  if (val < 10) {
-      console.log("Meno di 10");
-    } else if (val < 5) {
-      console.log("Meno di 5");
-    } else {
-      console.log("Uguale a 10 o maggiore");
-    }
-*/
+  */
+let val = 7;
+if (val < 5) {
+  console.log("Meno di 5");
+} else if (val < 10) {
+  console.log("Meno di 10");
+} else {
+  console.log("Uguale a 10 o maggiore");
+}
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
@@ -157,6 +167,10 @@ console.log(num1);
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
-num1.splice(9, 1, 100);
+const deleteArray = num1.length - 1;
+
+num1.splice(deleteArray, 1, 100);
+
+// num1.splice(9, 1, 100);
 
 console.log(num1);
